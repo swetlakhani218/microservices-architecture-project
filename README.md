@@ -25,11 +25,11 @@ It simulates a hotel rating platform where users can register, log in, rate hote
 | -------------------- | ------------------------------------------------------------- | ---- |
 | **config-server**    | Centralized configuration management for all services         | 8085 |
 | **discovery-server** | Eureka Service Registry for service discovery                 | 8761 |
-| **api-gateway**      | Entry point for all client requests, handles JWT validation   | 8080 |
-| **auth-service**     | Handles signup, login, and JWT token generation               | 8081 |
-| **user-service**     | Manages user profiles and aggregates data from other services | 8082 |
+| **api-gateway**      | Entry point for all client requests, handles JWT validation   | 8084 |
+| **auth-service**     | Handles signup, login, and JWT token generation               | 8080 |
+| **user-service**     | Manages user profiles and aggregates data from other services | 8081 |
 | **rating-service**   | Manages user ratings (stored in MongoDB)                      | 8083 |
-| **hotel-service**    | Manages hotel data (stored in PostgreSQL)                     | 8084 |
+| **hotel-service**    | Manages hotel data (stored in PostgreSQL)                     | 8082 |
 
 ---
 
@@ -102,7 +102,7 @@ mvn spring-boot:run
 
 ### 4️⃣ Access Services
 
-- **Gateway** → http://localhost:8080
+- **Gateway** → http://localhost:8084
 - **Eureka Dashboard** → http://localhost:8761
 - **Auth Login** → `POST /auth/login`
 - **User** → `GET /users/{id}`
