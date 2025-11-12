@@ -131,12 +131,6 @@ mvn spring-boot:run
 
 ---
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!  
-Feel free to check the issues.
----
-
 ## 👨‍💻 Author
 
 **Swet Lakhani**  
